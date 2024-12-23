@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/318Mediator.dir/318Mediator.cpp.o -o /testcode/bin/318Mediator 

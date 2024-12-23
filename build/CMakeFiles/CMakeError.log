@@ -1,0 +1,1020 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ba8ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ba8ce.dir/build.make CMakeFiles/cmTC_ba8ce.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_ba8ce.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ba8ce.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ba8ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba8ce.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_ba8ce.dir/src.c.o -o cmTC_ba8ce 
+CMakeFiles/cmTC_ba8ce.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_ba8ce.dir/build.make:99：cmTC_ba8ce] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_ba8ce/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fe83d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fe83d.dir/build.make CMakeFiles/cmTC_fe83d.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_fe83d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_fe83d.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fe83d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe83d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_fe83d.dir/CheckFunctionExists.c.o -o cmTC_fe83d  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_fe83d.dir/build.make:99：cmTC_fe83d] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_fe83d/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2add5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2add5.dir/build.make CMakeFiles/cmTC_2add5.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_2add5.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2add5.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2add5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2add5.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_2add5.dir/src.c.o -o cmTC_2add5 
+CMakeFiles/cmTC_2add5.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_2add5.dir/build.make:99：cmTC_2add5] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_2add5/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8cfd7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8cfd7.dir/build.make CMakeFiles/cmTC_8cfd7.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8cfd7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_8cfd7.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8cfd7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cfd7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_8cfd7.dir/CheckFunctionExists.c.o -o cmTC_8cfd7  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_8cfd7.dir/build.make:99：cmTC_8cfd7] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_8cfd7/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_837c4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_837c4.dir/build.make CMakeFiles/cmTC_837c4.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_837c4.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_837c4.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_837c4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_837c4.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_837c4.dir/src.c.o -o cmTC_837c4 
+CMakeFiles/cmTC_837c4.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_837c4.dir/build.make:99：cmTC_837c4] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_837c4/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b9a09/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b9a09.dir/build.make CMakeFiles/cmTC_b9a09.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b9a09.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_b9a09.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b9a09
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9a09.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_b9a09.dir/CheckFunctionExists.c.o -o cmTC_b9a09  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_b9a09.dir/build.make:99：cmTC_b9a09] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_b9a09/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_73492/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_73492.dir/build.make CMakeFiles/cmTC_73492.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_73492.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_73492.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_73492
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73492.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_73492.dir/src.c.o -o cmTC_73492 
+CMakeFiles/cmTC_73492.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_73492.dir/build.make:99：cmTC_73492] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_73492/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_decac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_decac.dir/build.make CMakeFiles/cmTC_decac.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_decac.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_decac.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_decac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_decac.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_decac.dir/CheckFunctionExists.c.o -o cmTC_decac  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_decac.dir/build.make:99：cmTC_decac] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_decac/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a5eec/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a5eec.dir/build.make CMakeFiles/cmTC_a5eec.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a5eec.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a5eec.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a5eec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5eec.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_a5eec.dir/src.c.o -o cmTC_a5eec 
+CMakeFiles/cmTC_a5eec.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_a5eec.dir/build.make:99：cmTC_a5eec] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_a5eec/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6c683/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6c683.dir/build.make CMakeFiles/cmTC_6c683.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_6c683.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_6c683.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6c683
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c683.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_6c683.dir/CheckFunctionExists.c.o -o cmTC_6c683  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_6c683.dir/build.make:99：cmTC_6c683] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_6c683/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2140d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2140d.dir/build.make CMakeFiles/cmTC_2140d.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_2140d.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2140d.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2140d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2140d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_2140d.dir/src.c.o -o cmTC_2140d 
+CMakeFiles/cmTC_2140d.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_2140d.dir/build.make:99：cmTC_2140d] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_2140d/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4695d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4695d.dir/build.make CMakeFiles/cmTC_4695d.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4695d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_4695d.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4695d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4695d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_4695d.dir/CheckFunctionExists.c.o -o cmTC_4695d  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_4695d.dir/build.make:99：cmTC_4695d] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_4695d/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_93149/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_93149.dir/build.make CMakeFiles/cmTC_93149.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_93149.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_93149.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_93149
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93149.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_93149.dir/src.c.o -o cmTC_93149 
+CMakeFiles/cmTC_93149.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_93149.dir/build.make:99：cmTC_93149] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_93149/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_90915/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_90915.dir/build.make CMakeFiles/cmTC_90915.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_90915.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_90915.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_90915
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90915.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_90915.dir/CheckFunctionExists.c.o -o cmTC_90915  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_90915.dir/build.make:99：cmTC_90915] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_90915/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c4156/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c4156.dir/build.make CMakeFiles/cmTC_c4156.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c4156.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c4156.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c4156
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4156.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_c4156.dir/src.c.o -o cmTC_c4156 
+CMakeFiles/cmTC_c4156.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_c4156.dir/build.make:99：cmTC_c4156] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_c4156/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9b2c8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9b2c8.dir/build.make CMakeFiles/cmTC_9b2c8.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9b2c8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_9b2c8.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9b2c8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b2c8.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_9b2c8.dir/CheckFunctionExists.c.o -o cmTC_9b2c8  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_9b2c8.dir/build.make:99：cmTC_9b2c8] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_9b2c8/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_25d17/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_25d17.dir/build.make CMakeFiles/cmTC_25d17.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_25d17.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_25d17.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_25d17
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25d17.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_25d17.dir/src.c.o -o cmTC_25d17 
+CMakeFiles/cmTC_25d17.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_25d17.dir/build.make:99：cmTC_25d17] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_25d17/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_46707/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_46707.dir/build.make CMakeFiles/cmTC_46707.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_46707.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_46707.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_46707
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46707.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_46707.dir/CheckFunctionExists.c.o -o cmTC_46707  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_46707.dir/build.make:99：cmTC_46707] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_46707/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_04e30/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_04e30.dir/build.make CMakeFiles/cmTC_04e30.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_04e30.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_04e30.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_04e30
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04e30.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_04e30.dir/src.c.o -o cmTC_04e30 
+CMakeFiles/cmTC_04e30.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_04e30.dir/build.make:99：cmTC_04e30] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_04e30/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_74e51/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_74e51.dir/build.make CMakeFiles/cmTC_74e51.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_74e51.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_74e51.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_74e51
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74e51.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_74e51.dir/CheckFunctionExists.c.o -o cmTC_74e51  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_74e51.dir/build.make:99：cmTC_74e51] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_74e51/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0c727/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0c727.dir/build.make CMakeFiles/cmTC_0c727.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0c727.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_0c727.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_0c727
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c727.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_0c727.dir/src.c.o -o cmTC_0c727 
+CMakeFiles/cmTC_0c727.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_0c727.dir/build.make:99：cmTC_0c727] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_0c727/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bfbb4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bfbb4.dir/build.make CMakeFiles/cmTC_bfbb4.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_bfbb4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_bfbb4.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bfbb4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfbb4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_bfbb4.dir/CheckFunctionExists.c.o -o cmTC_bfbb4  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_bfbb4.dir/build.make:99：cmTC_bfbb4] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_bfbb4/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_094af/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_094af.dir/build.make CMakeFiles/cmTC_094af.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_094af.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_094af.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_094af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_094af.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_094af.dir/src.c.o -o cmTC_094af 
+CMakeFiles/cmTC_094af.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_094af.dir/build.make:99：cmTC_094af] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_094af/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_25fd3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_25fd3.dir/build.make CMakeFiles/cmTC_25fd3.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_25fd3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_25fd3.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_25fd3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25fd3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_25fd3.dir/CheckFunctionExists.c.o -o cmTC_25fd3  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_25fd3.dir/build.make:99：cmTC_25fd3] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_25fd3/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2fbee/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2fbee.dir/build.make CMakeFiles/cmTC_2fbee.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_2fbee.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2fbee.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2fbee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fbee.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_2fbee.dir/src.c.o -o cmTC_2fbee 
+CMakeFiles/cmTC_2fbee.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_2fbee.dir/build.make:99：cmTC_2fbee] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_2fbee/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cc53a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cc53a.dir/build.make CMakeFiles/cmTC_cc53a.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_cc53a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_cc53a.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cc53a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc53a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_cc53a.dir/CheckFunctionExists.c.o -o cmTC_cc53a  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_cc53a.dir/build.make:99：cmTC_cc53a] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_cc53a/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_94fad/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_94fad.dir/build.make CMakeFiles/cmTC_94fad.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_94fad.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_94fad.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_94fad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94fad.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_94fad.dir/src.c.o -o cmTC_94fad 
+CMakeFiles/cmTC_94fad.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_94fad.dir/build.make:99：cmTC_94fad] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_94fad/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_08d5a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_08d5a.dir/build.make CMakeFiles/cmTC_08d5a.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_08d5a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_08d5a.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_08d5a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08d5a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_08d5a.dir/CheckFunctionExists.c.o -o cmTC_08d5a  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_08d5a.dir/build.make:99：cmTC_08d5a] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_08d5a/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_faef0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_faef0.dir/build.make CMakeFiles/cmTC_faef0.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_faef0.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_faef0.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_faef0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_faef0.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_faef0.dir/src.c.o -o cmTC_faef0 
+CMakeFiles/cmTC_faef0.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_faef0.dir/build.make:99：cmTC_faef0] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_faef0/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a7c9e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a7c9e.dir/build.make CMakeFiles/cmTC_a7c9e.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a7c9e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_a7c9e.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a7c9e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7c9e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_a7c9e.dir/CheckFunctionExists.c.o -o cmTC_a7c9e  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_a7c9e.dir/build.make:99：cmTC_a7c9e] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_a7c9e/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_571aa/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_571aa.dir/build.make CMakeFiles/cmTC_571aa.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_571aa.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_571aa.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_571aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_571aa.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_571aa.dir/src.c.o -o cmTC_571aa 
+CMakeFiles/cmTC_571aa.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_571aa.dir/build.make:99：cmTC_571aa] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_571aa/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c6fad/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c6fad.dir/build.make CMakeFiles/cmTC_c6fad.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c6fad.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_c6fad.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c6fad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6fad.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_c6fad.dir/CheckFunctionExists.c.o -o cmTC_c6fad  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_c6fad.dir/build.make:99：cmTC_c6fad] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_c6fad/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ae1b3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ae1b3.dir/build.make CMakeFiles/cmTC_ae1b3.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_ae1b3.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ae1b3.dir/src.c.o -c /testcode/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ae1b3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae1b3.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_ae1b3.dir/src.c.o -o cmTC_ae1b3 
+CMakeFiles/cmTC_ae1b3.dir/src.c.o：在函数‘main’中：
+src.c:(.text+0x2d)：对‘pthread_create’未定义的引用
+src.c:(.text+0x39)：对‘pthread_detach’未定义的引用
+src.c:(.text+0x45)：对‘pthread_cancel’未定义的引用
+src.c:(.text+0x56)：对‘pthread_join’未定义的引用
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_ae1b3.dir/build.make:99：cmTC_ae1b3] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_ae1b3/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /testcode/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_31704/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_31704.dir/build.make CMakeFiles/cmTC_31704.dir/build
+gmake[1]: 进入目录“/testcode/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_31704.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_31704.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_31704
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31704.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_31704.dir/CheckFunctionExists.c.o -o cmTC_31704  -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: 错误：ld 返回 1
+gmake[1]: *** [CMakeFiles/cmTC_31704.dir/build.make:99：cmTC_31704] 错误 1
+gmake[1]: 离开目录“/testcode/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_31704/fast] 错误 2
+
+
+

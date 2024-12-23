@@ -1,0 +1,9 @@
+name: leon
+sex: male
+age: 18
+system:
+    port: 3306
+    value: 120
+    web: www.leon.com
+    ip: 192.168.200.130
+    int_vec: [12,13,14,15,16]

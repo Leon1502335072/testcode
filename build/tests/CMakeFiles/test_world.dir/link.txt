@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/test_world.dir/test_world.cpp.o -o test_world  -Wl,-rpath,/testcode/build/world ../world/libworldlib.so ../lib/libgtest.a ../lib/libgtest_main.a ../lib/libgtest.a -lpthread 

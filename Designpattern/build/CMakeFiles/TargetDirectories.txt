@@ -1,0 +1,7 @@
+/testcode/Designpattern/build/CMakeFiles/rebuild_cache.dir
+/testcode/Designpattern/build/CMakeFiles/317Iterator.dir
+/testcode/Designpattern/build/CMakeFiles/320Observer.dir
+/testcode/Designpattern/build/CMakeFiles/322State.dir
+/testcode/Designpattern/build/CMakeFiles/324Visitor.dir
+/testcode/Designpattern/build/CMakeFiles/318Mediator.dir
+/testcode/Designpattern/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/320Observer.dir/320Observer.cpp.o CMakeFiles/320Observer.dir/NewsAgency.cpp.o -o /testcode/bin/320Observer 

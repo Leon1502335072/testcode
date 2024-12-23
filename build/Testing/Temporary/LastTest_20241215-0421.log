@@ -1,0 +1,36 @@
+Start testing: Dec 15 16:43 CST
+----------------------------------------------------------
+1/2 Testing: test_hello
+1/2 Test: test_hello
+Command: "/testcode/build/tests/test_hello"
+Directory: /testcode/build/tests
+"test_hello" start time: Dec 15 16:43 CST
+Output:
+----------------------------------------------------------
+Running main() from /testcode/HelloWorld/thirdpart/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 3 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from testcase1
+[ RUN      ] testcase1.isOdd3
+[       OK ] testcase1.isOdd3 (0 ms)
+[ RUN      ] testcase1.isOdd5
+[       OK ] testcase1.isOdd5 (0 ms)
+[----------] 2 tests from testcase1 (0 ms total)
+
+[----------] 1 test from testcase2
+[ RUN      ] testcase2.Sum1_2
+[       OK ] testcase2.Sum1_2 (0 ms)
+[----------] 1 test from testcase2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test suites ran. (0 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_hello" end time: Dec 15 16:43 CST
+"test_hello" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 15 16:43 CST

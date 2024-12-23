@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20241215-0421-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.20.2"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="centos8.2"
+	OSRelease="4.18.0-348.7.1.el8_5.x86_64"
+	OSVersion="#1 SMP Wed Dec 22 13:25:12 UTC 2021"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="165"
+	ProcessorCacheSize="16384"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="1950"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2304"
+	>
+	<Testing>
+		<StartDateTime>Dec 15 16:43 CST</StartDateTime>
+		<StartTestTime>1734252208</StartTestTime>
+		<TestList>
+			<Test>./tests/test_hello</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>test_hello</Name>
+			<Path>./tests</Path>
+			<FullName>./tests/test_hello</FullName>
+			<FullCommandLine>/testcode/build/tests/test_hello</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00219052</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/testcode/build/tests/test_hello</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyFUcFOxCAQvfcr5rg9FBY2PXow0Whi4po2xkPTbLBgl4TCBqj+vm1Z69aw9V2AmTdv3jBFr7XULXRM6k0KH9Z0gL1wvjFc4EehlHkzVnHsj9LyE7Met8a0SoycjCCSI3oRwc42uB1vh1ERNU1S3cyooTi328HIcaEfnR7gejmcKKmyGTU8KPPOVCAI/Smt0Z3QA1n4rD/9IdNL1WkI5gRJKihen2FC/RtG0u053w3ZgP1TJAubLXQuXZXIVyXyWeJ/p4EK3nim0mRZQcIfLApo3BdFZd+RA437+slGfUW7rNm6th8vmM24+dLL/V/fO1im0bLTYP/ltizv78bhzpUo+QZZAdHp====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Dec 15 16:43 CST</EndDateTime>
+		<EndTestTime>1734252208</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

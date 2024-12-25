@@ -35,6 +35,9 @@ public:
         cout << a << " " << str << endl;
     }
 
+
+
+
     static void world(const int& a, const string& str)
     {
         cout << a << " " << str << endl;

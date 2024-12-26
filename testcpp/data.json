@@ -1,0 +1,16 @@
+{
+    "age": 20,
+    "hoby": [
+        "programming",
+        "listen to the music",
+        "read book"
+    ],
+    "is_student": true,
+    "name": "leon",
+    "skills": {
+        "C#": "proficiency",
+        "C/C++": "master",
+        "JavaScript": "skilled",
+        "Python": "proficiency"
+    }
+}

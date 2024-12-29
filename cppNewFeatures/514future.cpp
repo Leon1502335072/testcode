@@ -134,7 +134,8 @@ int main(int arg, char *argv[])
 
 #if 0
     promise<string> pro;
-    //thread t1(fun, ref(pro));
+    // promis对象需要是子线程入口函数的形参 且传递的必须是实参的引用
+    // thread t1(fun, ref(pro));
 
     thread t1([](promise<string> &p)
               {
@@ -149,7 +150,5 @@ int main(int arg, char *argv[])
 
     t1.join();
 #endif
-
-
     return 0;
 }

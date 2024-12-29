@@ -16,6 +16,7 @@ struct Person
 class Counter
 {
 public:
+    Counter():number(0) {}
     void increment()
     {
         for (int i = 0; i < 100; ++i)
@@ -43,7 +44,7 @@ public:
     }
 private:
     //int number = 0;
-    atomic_int number = 0;
+    atomic_int number;
     //mutex mtx;
 };
 

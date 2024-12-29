@@ -68,7 +68,10 @@ void classMemberFunction()
 
 int main(int arg, char** argv)
 {
-    //ordinaryFunction();
-    classMemberFunction();
+    // ordinaryFunction();
+    // classMemberFunction();
+
+    cout << thread::hardware_concurrency() << endl;
+
     return 0;
 }

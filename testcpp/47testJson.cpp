@@ -386,7 +386,18 @@ void testJson7()
     // 反过来不推荐直接写 应该是下面这种
     auto s2 = j1.template get<string>();
 
-    
+    ifstream f;
+    f.open("../.vscode/tasks.json");
+    json jsonfile;
+    if (f.is_open())
+    {
+        jsonfile << f;
+    }
+    else
+    {
+        cout << "open file error..." << endl;
+    }
+    cout << jsonfile.dump(4) << endl;
 }
 
 int main(int arg, char* argv[])

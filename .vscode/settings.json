@@ -69,6 +69,6 @@
         "csignal": "cpp",
         "forward_list": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.errorSquiggles": "enabled",
     "cmake.sourceDirectory": "/testcode/HelloWorld"
 }

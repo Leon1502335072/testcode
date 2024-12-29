@@ -14,3 +14,4 @@ thread-1
 thread-2
 =======
 >>>>>>> ca2753d61485ee13015275a316a9bddd586fdf36
+The elements of the C language library are also included as a subset of the C++ Standard library. 
